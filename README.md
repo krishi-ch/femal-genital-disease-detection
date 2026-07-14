@@ -24,10 +24,15 @@ A Streamlit-based prototype application for anonymous women's health symptom dia
    ```
 
 ## Usage
-Run the app with:
-```bash
-streamlit run app.py
-```
+1. First, generate the synthetic dataset and train the models:
+   ```bash
+   python generate_dataset.py
+   python model_training.py
+   ```
+2. Run the app with:
+   ```bash
+   streamlit run app.py
+   ```
 
 ## Project Files
 - `app.py`: Main Streamlit application
@@ -37,7 +42,7 @@ streamlit run app.py
 - `generate_dataset.py`: Synthetic dataset generator
 - `requirements.txt`: Dependencies list
 - `static/`: Audio and video files for accessibility
-- `.pkl` files: Trained ML models and explainer
+- `.pkl` files (not included in repo, generated locally): Trained ML models and explainer
 
 ## Author
 Krishi Chintala
